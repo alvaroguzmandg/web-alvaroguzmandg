@@ -12,20 +12,21 @@ export function Hero() {
   return (
     <section className="hero shell" aria-labelledby="hero-title">
       <motion.p className="hero-eyebrow" initial={reducedMotion ? false : { opacity: 0 }} animate={{ opacity: 1 }}>
-        Buenos Aires · Argentina <span>Perfil híbrido digital</span>
+        Álvaro Guzmán <span>Buenos Aires · Argentina</span>
       </motion.p>
 
       <h1 id="hero-title">
-        <span className="hero-mask"><motion.span initial={initial} animate={{ y: 0 }} transition={{ duration: 0.75, ease }}>Diseño digital</motion.span></span>
-        <span className="hero-mask hero-line-offset"><motion.span initial={initial} animate={{ y: 0 }} transition={{ duration: 0.75, delay: 0.08, ease }}>con criterio técnico.</motion.span></span>
+        <span className="hero-mask hero-title-primary"><motion.span initial={initial} animate={{ y: 0 }} transition={{ duration: 0.75, ease }}>Diseño y desarrollo</motion.span></span>
+        <span className="hero-mask hero-title-digital"><motion.span initial={initial} animate={{ y: 0 }} transition={{ duration: 0.75, delay: 0.08, ease }}>Digital</motion.span></span>
       </h1>
 
       <motion.div className="hero-summary" initial={reducedMotion ? false : { opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65, delay: 0.35, ease }}>
         <p>{profile.intro}</p>
-        <p className="hero-path" aria-label="Diseño, implementación, producción y coordinación">
-          Diseño <span>→</span> Implementación <span>→</span> Producción <span>→</span> Coordinación
-        </p>
+        <p className="hero-disciplines">{profile.disciplines}</p>
         <a className="text-link" href="#proyectos">Ver trabajo <span aria-hidden="true">↓</span></a>
+        <p className="hero-path" aria-label="Coordinación, diseño, producción e implementación">
+          Coordinación <span>→</span> Diseño <span>→</span> Producción <span>→</span> Implementación
+        </p>
       </motion.div>
     </section>
   );
