@@ -1,0 +1,1 @@
+export function Footer() { return <footer className="footer shell"><span>Álvaro Guzmán</span><span>Digital Designer · Web & Front-end · Creative Operations</span><a href="#top">Back to top ↑</a></footer>; }

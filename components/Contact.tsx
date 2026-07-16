@@ -1,0 +1,3 @@
+import { profile } from "@/data/profile";
+
+export function Contact() { return <section id="contact" className="contact shell"><span className="eyebrow">05 · Contact</span><h2>Podemos<br /><em>hablar.</em></h2><p>Si querés conversar sobre un proyecto, una oportunidad o intercambiar ideas sobre diseño y tecnología.</p><div className="contact-links"><a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>{profile.email ? <a href={`mailto:${profile.email}`}>Email ↗</a> : <span title="Pendiente de completar">Email — Próximamente</span>}{profile.cvUrl ? <a href={profile.cvUrl}>Descargar CV ↓</a> : <span title="Pendiente de completar">CV — Próximamente</span>}</div></section>; }
