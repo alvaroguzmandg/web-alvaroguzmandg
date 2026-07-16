@@ -1,8 +1,7 @@
 export const profile = {
   name: "Álvaro Guzmán",
   positioning: "Diseño digital · Front-end · Producción creativa",
-  intro: "Un perfil híbrido entre diseño, front-end y producción digital, con experiencia concreta en e-commerce y ejecución.",
-  disciplines: "Front-end e implementación · Diseño UX/UI · Operaciones creativas",
+  intro: "Diseño, coordino y produzco soluciones digitales listas para implementar.",
   linkedin: "https://www.linkedin.com/in/alvaroguzmandg/",
   email: "alvaroguzmandg@gmail.com",
   about: [
