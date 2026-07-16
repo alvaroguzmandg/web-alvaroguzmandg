@@ -1,3 +1,2 @@
 import { profile } from "@/data/profile";
-
-export function About() { return <section id="about" className="section about shell"><div className="section-heading"><span>04</span><h2>About</h2></div><div className="about-copy">{profile.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></section>; }
+export function About(){return <section id="about" className="about-section"><div className="shell"><div className="simple-heading"><span>01</span><h2>Perfil</h2></div><div className="about-layout"><figure className="about-photo"><img src="/images/alvaro-perfil-denim.png" alt="Álvaro Guzmán"/></figure><div className="about-copy">{profile.about.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</div></div></div></section>}
