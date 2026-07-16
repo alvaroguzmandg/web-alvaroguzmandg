@@ -6,9 +6,11 @@ const openSans = Open_Sans({ variable: "--font-open-sans", subsets: ["latin"] })
 const archivoBlack = Archivo_Black({ variable: "--font-display", weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alvaroguzman.com"),
+  metadataBase: new URL("https://alvaroguzmandg.vercel.app"),
   title: { default: "Álvaro Guzmán — Digital Designer", template: "%s — Álvaro Guzmán" },
   description: "Digital Designer · Web & Front-end · Creative Operations. Diseño, tecnología y producción digital.",
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   openGraph: {
     title: "Álvaro Guzmán — Digital Designer",
     description: "Diseño, tecnología y producción digital.",
