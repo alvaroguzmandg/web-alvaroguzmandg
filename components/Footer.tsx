@@ -1,1 +1,11 @@
-export function Footer() { return <footer className="footer shell"><span>Álvaro Guzmán</span><span>Diseño digital · Web & Front-end · Operaciones creativas</span><a href="#top">Volver arriba ↑</a></footer>; }
+import { profile } from "@/data/profile";
+
+export function Footer() {
+  return (
+    <footer className="site-footer shell">
+      <span>© {new Date().getFullYear()} Álvaro Guzmán</span>
+      <a href={`mailto:${profile.email}`}>{profile.email}</a>
+      <a href="#top">Volver arriba <span aria-hidden="true">↑</span></a>
+    </footer>
+  );
+}

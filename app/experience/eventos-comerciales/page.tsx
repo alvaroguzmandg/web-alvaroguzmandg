@@ -1,2 +1,6 @@
-import Link from "next/link"; import { Footer } from "@/components/Footer"; import { Header } from "@/components/Header";
-export default function Page(){return <><Header/><main className="editorial-case shell"><Link href="/#arredo" className="back-link">← Experiencia profesional</Link><header><span>Área de trabajo · 02</span><h1>Eventos<br/><em>comerciales</em></h1><p>Construcción e implementación visual de campañas como Hot Sale, CyberMonday, lanzamientos de colección y períodos de rebajas.</p></header><section className="editorial-case-grid"><div className="case-placeholder">Campañas y piezas<br/>pendientes de carga</div><div><h2>Una identidad, muchos formatos</h2><p>Definición estética, adaptación a canales y producción de múltiples piezas dentro de una misma campaña, manteniendo coherencia y variedad.</p></div></section></main><Footer/></>}
+import { ExperienceCasePage, experienceMetadata } from "@/components/ExperienceCasePage";
+import { getExperienceArea } from "@/data/arredo";
+
+const area = getExperienceArea("eventos-comerciales")!;
+export const metadata = experienceMetadata(area);
+export default function Page() { return <ExperienceCasePage area={area} />; }

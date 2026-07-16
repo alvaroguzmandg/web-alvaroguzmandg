@@ -1,2 +1,6 @@
-import Link from "next/link"; import { Footer } from "@/components/Footer"; import { Header } from "@/components/Header";
-export default function Page(){return <><Header/><main className="editorial-case shell"><Link href="/#arredo" className="back-link">← Experiencia profesional</Link><header><span>Área de trabajo · 03</span><h1>Producción<br/><em>a gran escala</em></h1><p>Desarrollo de una misma campaña en muchas piezas, formatos y canales, sosteniendo coherencia visual sin perder variedad.</p></header><section className="editorial-case-grid"><div className="case-placeholder">Sistemas y adaptaciones<br/>pendientes de carga</div><div><h2>Variedad dentro de un sistema</h2><p>El trabajo requiere anticipar formatos, organizar prioridades y construir criterios que permitan adaptar una idea a web, e-commerce, pauta digital y comunicaciones comerciales.</p></div></section></main><Footer/></>}
+import { ExperienceCasePage, experienceMetadata } from "@/components/ExperienceCasePage";
+import { getExperienceArea } from "@/data/arredo";
+
+const area = getExperienceArea("produccion-a-gran-escala")!;
+export const metadata = experienceMetadata(area);
+export default function Page() { return <ExperienceCasePage area={area} />; }

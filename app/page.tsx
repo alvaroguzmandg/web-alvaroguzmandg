@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main id="contenido">
         <Hero />
         <Reveal><About /></Reveal>
         <Reveal><Expertise /></Reveal>

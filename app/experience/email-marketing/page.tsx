@@ -1,2 +1,6 @@
-import Link from "next/link"; import { Footer } from "@/components/Footer"; import { Header } from "@/components/Header";
-export default function Page(){return <><Header/><main className="editorial-case shell"><Link href="/#arredo" className="back-link">← Experiencia profesional</Link><header><span>Área de trabajo · 01</span><h1>Email<br/><em>marketing</em></h1><p>Diseño y desarrollo sostenido de comunicaciones comerciales por email: sistemas visuales, adaptación de campañas e implementación web.</p></header><section className="editorial-case-grid"><div className="case-placeholder">Ejemplos y piezas<br/>pendientes de carga</div><div><h2>Un sistema de trabajo continuo</h2><p>Este espacio está preparado para documentar criterios de diseño, variedad de formatos, desarrollo HTML y ejemplos representativos.</p><a href="https://www.figma.com/design/e8U4jWr3sV0iayqFSwgRFU/News-Branding---Web?node-id=0-1&t=daWSdu7kL0hVQDkR-1" target="_blank" rel="noreferrer">Abrir archivo de diseño ↗</a></div></section></main><Footer/></>}
+import { ExperienceCasePage, experienceMetadata } from "@/components/ExperienceCasePage";
+import { getExperienceArea } from "@/data/arredo";
+
+const area = getExperienceArea("email-marketing")!;
+export const metadata = experienceMetadata(area);
+export default function Page() { return <ExperienceCasePage area={area} />; }

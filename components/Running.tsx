@@ -1,1 +1,16 @@
-export function Running(){return <section className="running"><div className="shell running-inner"><div><span className="eyebrow">Fuera de la pantalla</span><h2>Running<br/>de larga distancia.</h2></div><div><p>Hace más de diez años que entreno y corro maratones, lo cual se convirtió en una parte fundamental de mi vida. Me ayuda a ordenar mis días, a trabajar durante meses por un objetivo y a entender el valor de sostener un proceso.</p><p>Paciencia, constancia y disciplina, incluso cuando los resultados tardan en llegar, pero siempre sin perder el foco en el objetivo.</p></div></div></section>}
+export function Running() {
+  return (
+    <section className="running-section" aria-labelledby="running-title">
+      <div className="shell running-layout">
+        <div>
+          <span className="eyebrow">Fuera del trabajo</span>
+          <h2 id="running-title">Running de larga distancia.</h2>
+        </div>
+        <div>
+          <p>Hace más de diez años que entreno y corro maratones. Es una práctica personal que organiza una parte importante de mis días.</p>
+          <p>Me interesa el proceso: preparar durante meses un objetivo, ajustar cuando algo cambia y sostenerlo incluso cuando el avance no es evidente.</p>
+        </div>
+      </div>
+    </section>
+  );
+}
