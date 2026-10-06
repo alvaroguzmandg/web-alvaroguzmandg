@@ -5,10 +5,9 @@ import { useState } from "react";
 import { profile } from "@/data/profile";
 
 const navigation = [
-  { label: "Perfil", href: "/#perfil" },
-  { label: "Capacidades", href: "/#capacidades" },
+  { label: "Trabajo", href: "/#trabajo" },
   { label: "Experiencia", href: "/#experiencia" },
-  { label: "Proyectos", href: "/#proyectos" },
+  { label: "Sobre mí", href: "/#sobre-mi" },
   { label: "Contacto", href: "/#contacto" },
 ];
 
@@ -20,7 +19,7 @@ export function Header() {
       <a className="skip-link" href="#contenido">Saltar al contenido</a>
       <Link href="/" className="header-identity" aria-label="Álvaro Guzmán, inicio">
         <span className="wordmark">Álvaro Guzmán<span>.</span></span>
-        <small>Diseño · Código · Producción</small>
+        <small>Diseño · Ecommerce · Tecnología</small>
       </Link>
 
       <button

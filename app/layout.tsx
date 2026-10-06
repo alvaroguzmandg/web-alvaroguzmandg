@@ -8,21 +8,21 @@ const archivoBlack = Archivo_Black({ variable: "--font-display", weight: "400", 
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://alvaroguzmandg.vercel.app"),
-  title: { default: "Álvaro Guzmán — Diseño digital, web y producción", template: "%s — Álvaro Guzmán" },
-  description: "Diseñador digital con conocimiento técnico y experiencia en web, e-commerce, producción digital y coordinación de procesos.",
+  title: { default: "Álvaro Guzmán — Diseño digital, ecommerce y producto", template: "%s — Álvaro Guzmán" },
+  description: "Diseñador digital con más de diez años de experiencia entre ecommerce, producto, front-end y automatización.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.svg" },
   openGraph: {
-    title: "Álvaro Guzmán — Diseño digital, web y producción",
-    description: "Diseño e implementación de experiencias digitales y los procesos necesarios para llevarlas a producción.",
+    title: "Álvaro Guzmán — Diseño digital, ecommerce y producto",
+    description: "Más de diez años trabajando entre diseño, ecommerce y tecnología, desde la necesidad comercial hasta producción.",
     url: "/",
     siteName: "Álvaro Guzmán",
     type: "website",
     locale: "es_AR",
     images: [{ url: "/og.png", width: 1730, height: 909, alt: "Álvaro Guzmán — Diseño digital" }],
   },
-  twitter: { card: "summary_large_image", title: "Álvaro Guzmán — Diseño digital, web y producción", description: "Diseño, implementación y producción digital.", images: ["/og.png"] },
+  twitter: { card: "summary_large_image", title: "Álvaro Guzmán — Diseño digital, ecommerce y producto", description: "Diseño digital, ecommerce, producto y front-end.", images: ["/og.png"] },
 };
 
 export const viewport: Viewport = { themeColor: "#f7f6f2", colorScheme: "light" };
